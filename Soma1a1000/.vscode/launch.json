@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Soma1a1000",
+            "request": "launch",
+            "mainClass": "Soma1a1000",
+            "projectName": "Soma de 1 a 1000_f71b354"
+        }
+    ]
+}
