@@ -17,7 +17,8 @@ public class MultiplosDe3
         int multiplosDe = 3; 
         for(int i=100; i>=1; i--)
         { 
-        	System.out.println(i + " - " + (i % multiplosDe == 0));
+        	//Descomentar na linha abaixo para poder ver qual momento ele entra na condicao IF
+        	//System.out.println(i + " - " + (i % multiplosDe == 0));
             if(i % multiplosDe == 0)
             {
             	//Variavel numero e divisão de numero não é preciso fazer dessa forma, pois precisamos mostar qual numero é
