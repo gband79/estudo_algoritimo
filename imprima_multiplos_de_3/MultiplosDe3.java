@@ -1,4 +1,4 @@
-
+﻿
 /*
 Faça um programa em Java que imprima todos os múltiplos de 3, entre 1 e 100.
 */
@@ -14,12 +14,14 @@ public class MultiplosDe3
         int multiplosDe = 3; 
         for(int i=100; i>=1; i--)
         { 
+           
             if(numero % multiplosDe == 0)
             {
-                numero--;
-                numero /= multiplosDe;
+                         
                 System.out.println("Multiplo de 3: "+ numero);
-            }
+            } 
+            
+            
         } 
     }
 }
