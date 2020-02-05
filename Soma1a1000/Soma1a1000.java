@@ -12,7 +12,7 @@ public class Soma1a1000{
         	numero++;
             somaDosNumeros += numero;
         }
-    System.out.println("A soma dos numeros entre 1 e 1000 ate: "+somaDosNumeros);
+    System.out.println("The sum of numbers between 1 and 1000 is: "+somaDosNumeros);
     }
 } 
 
