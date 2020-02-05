@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /*
 A Citizen can only vote if he is not under sixteen and he is a brazilian citizen.
 Create a program with two variables: int age, boolean brazilian and make the program to
@@ -6,29 +8,33 @@ say if the citizen is eligeble for voting or not, according with variable data.
 */
 
 public class Citizen{
-
-    int age = 18;
-    boolean brazilian = true;
-    
     public static void main(String[] args) {
-        if(age > 16 && brazilian == true){
-            System.out.println("eligeble for voting");
-       
+        
+				
+		Scanner entrada = new Scanner(System.in);
 
-        } else{
-            System.out.println("Not eligible for voting");
-        }
-    }
+        System.out.println("Insert your age:");
+        int age = entrada.nextInt();
+
+        System.out.println("Are you brazilian?");
+        String nationality = entrada.next();
+
+        if(age >= 16 && nationality.equalsIgnoreCase("yes")) {
+            
+        	System.out.println("You are eligeble for voting in brazil!");
+            
+        }else if(age >= 16 && nationality.equalsIgnoreCase("no")) {
+            
+        	System.out.println("You are not eligeble for voting in Brazil.");
+        
+        }else if(age < 16 && nationality.equalsIgnoreCase("yes")) {
+            System.out.println("You are not eligeble for voting in Brazil.");
+        
+        }else if(age < 16 && nationality.equalsIgnoreCase("no")) {
+        	System.out.println("You are not eligeble for voting in Brazil.");
+        } 	                    
+               
+        entrada.close();
+	}
 }
 
- //não entendi pq não posso atribuir uma variavel não estática a um contexto estático
-        /*
-        Error:
-        /Citizen.java:7: error: non-static variable age cannot be referenced from a static context
-        if(age > 16 && brazilian == true){
-           ^
-/Citizen.java:7: error: non-static variable brazilian cannot be referenced from a static context
-        if(age > 16 && brazilian == true){
-                       ^
-2 errors
-        */
