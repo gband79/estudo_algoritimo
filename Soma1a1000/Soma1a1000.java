@@ -2,17 +2,17 @@ public class Soma1a1000{
 
 	/*
 	 * Enunciado:
-	 * Faça um programa em Java que imprima a soma dos números de 1 até 1000.
+	 * Make a java program that prints the sum  of numbers between 1 and 1000.
 	 */
 	
     public static void main(String[] args) {
-        int numero = 0;
+        int numero = 1;
         int somaDosNumeros = 0;
-        for(int i=1; i<=1000; i++){
+        for(int i=1; i<=10; i++){
         	numero++;
             somaDosNumeros += numero;
         }
-    System.out.println("A some dos numeros entre 1 e 1000 ate: "+somaDosNumeros);
+    System.out.println("A soma dos numeros entre 1 e 1000 ate: "+somaDosNumeros);
     }
 } 
 
