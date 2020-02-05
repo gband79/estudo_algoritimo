@@ -20,12 +20,10 @@ public class Citizen{
         String nationality = entrada.next();
 
         if(age >= 16 && nationality.equalsIgnoreCase("yes")) {
-            
-        	System.out.println("You are eligeble for voting in brazil!");
+            System.out.println("You are eligeble for voting in brazil!");
             
         }else if(age >= 16 && nationality.equalsIgnoreCase("no")) {
-            
-        	System.out.println("You are not eligeble for voting in Brazil.");
+            System.out.println("You are not eligeble for voting in Brazil.");
         
         }else if(age < 16 && nationality.equalsIgnoreCase("yes")) {
             System.out.println("You are not eligeble for voting in Brazil.");
